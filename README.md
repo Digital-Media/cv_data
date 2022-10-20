@@ -1,7 +1,7 @@
 # Data for Courses at the Digital-Media department
 
-This repo contains datasets that can be used for teaching courses. 
-Right now it mostly contains images used for Computer Vision
+This repo contains datasets that can be used for teaching. 
+At the moment, it contains images used for Computer Vision lectures.
 
 # Dataset(s)
 ## Hybrid Images
