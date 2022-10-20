@@ -15,7 +15,7 @@ An examplary pair is shown below
 
 To directly download a zip folder of the dataset use [this link!](https://github.com/Digital-Media/cv_data/blob/main/hybrid_images.zip?raw=true)
 
-In a Jupyter notebook (on Windows and Linux) you can use the following lines of code to download and unzip:
+In a Jupyter notebook (on Windows and Linux) you can use the following lines of code to download and unzip the hybrid images:
 ```python
 !curl -LJO "https://raw.githubusercontent.com/Digital-Media/cv_data/main/hybrid_images.zip" --silent
 import zipfile
