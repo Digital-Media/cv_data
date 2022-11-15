@@ -25,7 +25,7 @@ with zipfile.ZipFile("hybrid_images.zip", 'r') as zip_ref:
 
 # Binary Leaves
 The `binary_leaves` folder and .zip-file contais 282 binary images of 5 different leave types. 
-The binary images are taken from the [Flavia leave dataset](https://flavia.sourceforge.net/) and feature a resolution of $170 \times 128$ pixels. The dataset is intended for use in examples for binary image processing.
+The binary images are taken from the [Flavia leave dataset](https://flavia.sourceforge.net/) and feature a resolution of $170 \times 128$ pixels. The dataset is intended for binary image processing.
 Exemplary images are shown below. 
 
 |  Japanese maple |  Chinese cinnamon  | ginkgo, maidenhair tree | Chinese tulip tree | tangerine |
