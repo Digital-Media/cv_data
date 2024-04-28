@@ -52,7 +52,7 @@ The `panorama_stitching` folder and .zip-file contains images that can be used f
 Various images from different sources are included.
 | Image(s) | Description, Source (Copyright) |
 | :-: | :- |
-| ![a panorama](/panorama_stitching/campus_hagenberg.jpg) (1250 x 442) | This image is a panorama image of the campus Hagenberg showing the ellipse, FH1 and FH2. The image can be, for example, cropped in multiple regions and than stitched together. Source: Originally the image was hosted at the Website of the University. Sadly it is offline, now. This version was downloaded form [an alternative: talente-ooe.at]("https://www.talente-ooe.at/fileadmin/_processed_/b/0/csm_fhooe-hagenberg-panorama-michael-fruehmann_53e7c4fbb7.jpg") |
+| ![a panorama](/panorama_stitching/campus_hagenberg.jpg) (1250 x 442) | This image is a panorama image of the campus Hagenberg showing the ellipse, FH1 and FH2. The image can be, for example, cropped in multiple regions and than stitched together. Source: Originally the image was hosted at the Website of the University. Sadly it is offline, now. This version was downloaded form [an alternative: talente-ooe.at](https://www.talente-ooe.at/fileadmin/_processed_/b/0/csm_fhooe-hagenberg-panorama-michael-fruehmann_53e7c4fbb7.jpg) |
 | ![imageA](/panorama_stitching/UTA_foto1A.jpg) ![imageB](/panorama_stitching/UTA_foto1B.jpg) (1024x683)| Two images (A and B) recorded at the [University of Texas at Austin](https://en.wikipedia.org/wiki/University_of_Texas_at_Austin). The big tower in image B shows the Main Building. Source: the images are downloaded from the staff website of [Hélio Pedrini](https://www.ic.unicamp.br/~helio/imagens_registro/). |
 
 # Download
