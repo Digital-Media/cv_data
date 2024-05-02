@@ -55,6 +55,18 @@ Various images from different sources are included.
 | ![a panorama](/panorama_stitching/campus_hagenberg.jpg) (1250 x 442) | This image is a panorama image of the campus Hagenberg showing the ellipse, FH1 and FH2. The image can be, for example, cropped in multiple regions and than stitched together. Source: Originally the image was hosted at the Website of the University. Sadly it is offline, now. This version was downloaded form [an alternative: talente-ooe.at](https://www.talente-ooe.at/fileadmin/_processed_/b/0/csm_fhooe-hagenberg-panorama-michael-fruehmann_53e7c4fbb7.jpg) |
 | ![imageA](/panorama_stitching/UTA_foto1A.jpg) ![imageB](/panorama_stitching/UTA_foto1B.jpg) (1024x683)| Two images (A and B) recorded at the [University of Texas at Austin](https://en.wikipedia.org/wiki/University_of_Texas_at_Austin). The big tower in image B shows the Main Building. Source: the images are downloaded from the staff website of [Hélio Pedrini](https://www.ic.unicamp.br/~helio/imagens_registro/). |
 
+## Exemplary Images (for various tasks)
+
+The `example_images` folder contains exemplary images that can be used for various tasks.
+
+|                   Image                   | Description, Source                                                                                                                                                                                                                    |
+| :---------------------------------------: | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+|      ![cat](/example_images/cat.jpg)      | A cute cat image. Source: [Wikimedia Commons](https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Cat03.jpg/481px-Cat03.jpg)                                                                                                     |
+|     ![gogh](/example_images/gogh.jpg)     | An image of a painting by Vincent van Gogh. Source: [Wikimedia Commons](https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Vincent_van_Gogh_-_National_Gallery_of_Art.JPG/367px-Vincent_van_Gogh_-_National_Gallery_of_Art.JPG) |
+| ![einstein](/example_images/einstein.jpg) | An image of Albert Einstein. Source: [The Laboratory for Computational Vision is an interdisciplinary research group at New York University](https://www.cns.nyu.edu/~lcv/ssim/index_files/image003.jpg)                               |
+|    ![woman](/example_images/woman.jpg)    | An image of a woman. Useful for showcasing edge and line detection. Source: [Flickr](https://live.staticflickr.com/8859/18045025168_3a1ffa6521_c_d.jpg)                                                                                |
+|   ![sudoku](/example_images/sudoku.png)   | An image of a sudoku puzzle. Useful for thresholding algorithms. Source: [OpenCV](https://raw.githubusercontent.com/opencv/opencv/4.x/samples/data/sudoku.png)                                                                         |
+
 # Download
 
 In a Jupyter notebook (on Windows and Linux) you can use the following lines of code to download and unzip the entire zip-file of a dataset:
