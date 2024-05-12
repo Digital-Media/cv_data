@@ -75,7 +75,7 @@ The `example_images` folder contains exemplary images that can be used for vario
 The `SFM` folder contains images that can be used for Structure From Motion (SFM).
 In the subfolders you can find images of different scenes that can be used for SFM tasks.
 
-- `Ellipse` [⬇️ (direct download)](https://github.com/Digital-Media/cv_data/blob/main/SFM/Ellipse/inputz.zip?raw=true): scene showing the FH's ellipse. Images show a drone flight with 3 different heights and angles. Images are extracted from a video and subsampled. Note that the matching of the images is not perfect for all images.
+- `Ellipse` [⬇️ (direct download of images as zip)](https://github.com/Digital-Media/cv_data/blob/main/SFM/Ellipse/input.zip?raw=true): scene showing the FH's ellipse. Images show a drone flight with 3 different heights and angles. Images are extracted from a video and subsampled. Note that the matching of the images is not perfect for all images.
 
 An exemplary set of images is shown in the following table.
 
