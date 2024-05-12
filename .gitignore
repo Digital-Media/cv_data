@@ -1,2 +1,5 @@
 
 tmp/*
+SFM/Ellipse/dense/0/images/*
+SFM/Ellipse/dense/0/sparse/*
+SFM/Ellipse/dense/0/stereo/*
