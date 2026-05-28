@@ -70,6 +70,14 @@ The `example_images` folder contains exemplary images that can be used for vario
 |    ![woman](/example_images/woman.jpg)    | An image of a woman. Useful for showcasing edge and line detection. Source:[Flickr](https://live.staticflickr.com/8859/18045025168_3a1ffa6521_c_d.jpg)                                                                                |
 |   ![sudoku](/example_images/sudoku.png)   | An image of a sudoku puzzle. Useful for thresholding algorithms. Source:[OpenCV](https://raw.githubusercontent.com/opencv/opencv/4.x/samples/data/sudoku.png)                                                                         |
 
+## Object Detection Sample Images
+
+The `object_detection` folder contains a small set of multi-object scenes used to demo modern detectors (YOLO, RT-DETR) and Vision-Language Models (e.g. Gemma 4). The classes shown — *person*, *car*, *bus*, *apple*, *banana*, *orange* — are all part of the COCO-80 label set, so pretrained detectors work out of the box.
+
+|                          Image                           | Description, Source                                                                                                                                                                                                                                                                            |
+| :------------------------------------------------------: | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+|    ![fruits](/object_detection/fruits.jpg) (1264 x 848)   | A wooden bowl on a wooden table containing whole apples, bananas, and oranges — for vision-language detection (e.g. *"detect: apple, banana, orange"*) and open-vocabulary queries like *"the leftmost fruit"*. Source: synthetic, generated with Google's Gemini 3 Pro Image. |
+
 ## Structure From Motion (SFM) Example Images (for various tasks)
 
 The `SFM` folder contains images that can be used for Structure From Motion (SFM).
@@ -83,6 +91,28 @@ An exemplary set of images is shown in the following table.
 | :-----------------------------------------: | :-----------------------------------------: | :-----------------------------------------: |
 | ![ellipse_01](/SFM/Ellipse/input/00000.jpg) | ![ellipse_02](/SFM/Ellipse/input/00033.jpg) | ![ellipse_02](/SFM/Ellipse/input/00099.jpg) |
 
+## Tiny NeRF Data
+
+The file `tiny_nerf_data.npz` is the dataset used by the [`11b_TinyNeRF.ipynb`](https://github.com/Digital-Media/vco/blob/vco2025/11b_TinyNeRF.ipynb) tutorial — a small, self-contained Neural Radiance Field (NeRF) demo. It contains **106 views** (100 × 100 RGB images), the corresponding **4 × 4 camera poses**, and the **focal length** (≈138.89), all in a single NumPy `.npz` archive.
+
+Originally sourced from Ben Mildenhall & Matthew Tancik's [`tiny_nerf.ipynb`](https://github.com/bmild/nerf/blob/master/tiny_nerf.ipynb) (`cseweb.ucsd.edu/~viscomp/projects/LF/papers/ECCV20/nerf/tiny_nerf_data.npz`); mirrored here for reliability.
+
+⬇️ Direct link: [`tiny_nerf_data.npz`](https://github.com/Digital-Media/cv_data/blob/main/tiny_nerf_data.npz?raw=true)
+
+```python
+import numpy as np
+data = np.load("tiny_nerf_data.npz")
+images, poses, focal = data["images"], data["poses"], data["focal"]
+print(images.shape, poses.shape, float(focal))
+# (106, 100, 100, 3) (106, 4, 4) 138.8888788992210
+```
+
+## FH HGB Hockey Dataset
+
+The `fhhgb-hockey-dataset.zip` contains a hockey-related dataset recorded at / for FH Upper Austria Hagenberg, used in computer vision exercises (e.g. detection / tracking on hockey footage). See the dataset author for the exact contents, splits, and licence.
+
+⬇️ Direct link: [`fhhgb-hockey-dataset.zip`](https://github.com/Digital-Media/cv_data/blob/main/fhhgb-hockey-dataset.zip?raw=true)
+
 # Download
 
 In a Jupyter notebook (on Windows and Linux) you can use the following lines of code to download and unzip the entire zip-file of a dataset:
@@ -94,4 +124,11 @@ with zipfile.ZipFile("<dataset>.zip", 'r') as zip_ref:
     zip_ref.extractall(".")
 ```
 
-Replace `<dataset>` with `hybrid_images`, `binary_leaves` or any other dataset you want to download.
+Replace `<dataset>` with `hybrid_images`, `binary_leaves`, `thermal-rgb_ellipse`, `thermal-rgb_FH3`, `thermal-rgb_forest`, `thermal-rgb_hut`, or `fhhgb-hockey-dataset`.
+
+For loose files (no zip needed) just `curl` or `wget` them directly, e.g.:
+
+```python
+!curl -LJO "https://raw.githubusercontent.com/Digital-Media/cv_data/main/tiny_nerf_data.npz" --silent
+!curl -LJO "https://raw.githubusercontent.com/Digital-Media/cv_data/main/object_detection/street.jpg" --silent
+```
