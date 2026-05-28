@@ -76,6 +76,7 @@ The `object_detection` folder contains a small set of multi-object scenes used t
 
 |                          Image                           | Description, Source                                                                                                                                                                                                                                                                            |
 | :------------------------------------------------------: | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+|    ![street](/object_detection/street.jpg) (1376 x 768)   | A city-sidewalk scene with several pedestrians, parked cars, and a bus in the background — ideal for `person` / `car` / `bus` detection demos and NMS visualisations. Source: synthetic, generated with Google's Gemini 3 Pro Image (a.k.a. *Nano Banana*).                                  |
 |    ![fruits](/object_detection/fruits.jpg) (1264 x 848)   | A wooden bowl on a wooden table containing whole apples, bananas, and oranges — for vision-language detection (e.g. *"detect: apple, banana, orange"*) and open-vocabulary queries like *"the leftmost fruit"*. Source: synthetic, generated with Google's Gemini 3 Pro Image. |
 
 ## Structure From Motion (SFM) Example Images (for various tasks)
@@ -97,7 +98,7 @@ The file `tiny_nerf_data.npz` is the dataset used by the [`11b_TinyNeRF.ipynb`](
 
 Originally sourced from Ben Mildenhall & Matthew Tancik's [`tiny_nerf.ipynb`](https://github.com/bmild/nerf/blob/master/tiny_nerf.ipynb) (`cseweb.ucsd.edu/~viscomp/projects/LF/papers/ECCV20/nerf/tiny_nerf_data.npz`); mirrored here for reliability.
 
-⬇️ Direct link: [`tiny_nerf_data.npz`](https://github.com/Digital-Media/cv_data/blob/main/tiny_nerf_data.npz?raw=true)
+⬇️ Direct link: [`tiny_nerf_data.npz`](https://raw.githubusercontent.com/Digital-Media/cv_data/main/tiny_nerf_data.npz)
 
 ```python
 import numpy as np
@@ -111,7 +112,7 @@ print(images.shape, poses.shape, float(focal))
 
 The `fhhgb-hockey-dataset.zip` contains a hockey-related dataset recorded at / for FH Upper Austria Hagenberg, used in computer vision exercises (e.g. detection / tracking on hockey footage). See the dataset author for the exact contents, splits, and licence.
 
-⬇️ Direct link: [`fhhgb-hockey-dataset.zip`](https://github.com/Digital-Media/cv_data/blob/main/fhhgb-hockey-dataset.zip?raw=true)
+⬇️ Direct link: [`fhhgb-hockey-dataset.zip`](https://raw.githubusercontent.com/Digital-Media/cv_data/main/fhhgb-hockey-dataset.zip)
 
 # Download
 
