@@ -114,6 +114,12 @@ The `fhhgb-hockey-dataset.zip` contains a hockey-related dataset recorded at / f
 
 ⬇️ Direct link: [`fhhgb-hockey-dataset.zip`](https://raw.githubusercontent.com/Digital-Media/cv_data/main/fhhgb-hockey-dataset.zip)
 
+## Pedestrian Detection Dataset
+
+The `pedestrian-detection-dataset.zip` contains images of pedestrians crossing streets, annotated in **YOLOv11 format** for object detection. It features **752 images** across `train` (592), `valid` (82), and `test` (78) splits, with **2 classes**: `crossing` and `waiting pedestrian`. Annotations and splits follow the standard YOLO layout (`<split>/images` + `<split>/labels`, plus a `data.yaml`). A pretrained **YOLO11n** model (`models/weights.pt`) trained on this dataset is bundled inside the archive. Source: [Roboflow Universe](https://universe.roboflow.com/dvcss26/pedestrian-detection-oyrcs/dataset/4), licence CC BY 4.0.
+
+⬇️ Direct link: [`pedestrian-detection-dataset.zip`](https://raw.githubusercontent.com/Digital-Media/cv_data/main/pedestrian-detection-dataset.zip)
+
 # Download
 
 In a Jupyter notebook (on Windows and Linux) you can use the following lines of code to download and unzip the entire zip-file of a dataset:
@@ -125,7 +131,7 @@ with zipfile.ZipFile("<dataset>.zip", 'r') as zip_ref:
     zip_ref.extractall(".")
 ```
 
-Replace `<dataset>` with `hybrid_images`, `binary_leaves`, `thermal-rgb_ellipse`, `thermal-rgb_FH3`, `thermal-rgb_forest`, `thermal-rgb_hut`, or `fhhgb-hockey-dataset`.
+Replace `<dataset>` with `hybrid_images`, `binary_leaves`, `thermal-rgb_ellipse`, `thermal-rgb_FH3`, `thermal-rgb_forest`, `thermal-rgb_hut`, `fhhgb-hockey-dataset`, or `pedestrian-detection-dataset`.
 
 For loose files (no zip needed) just `curl` or `wget` them directly, e.g.:
 
